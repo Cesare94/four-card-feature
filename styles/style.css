@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    max-width: 1440px;
+    
+    
+}
+
+.box {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 500px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.container span {
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.container b {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.container p {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid: 
+    "supervisor  builder  calculator"
+    'supervisor builder calculator'
+    "supervisor karma calculator";
+}
+
+main .supervisor {
+    border-top: 4px solid hsl(180, 62%, 55%);
+    background-color: white;
+    width: 400px;
+    padding: 30px;
+    grid-area: supervisor;
+    margin: 130px 20px 150px 20px;
+    box-shadow: black 5px 5px 5px -5px;
+
+}
+
+main .supervisor img{
+    float: right;
+}
+
+main .calculator{
+    border-top: 4px solid hsl(212, 86%, 64%);
+    background-color: white;
+    width: 400px;
+    padding: 30px;
+    grid-area: calculator;
+    margin: 130px 30px 150px 20px;
+    box-shadow: black 5px 5px 5px -5px;
+
+}
+
+main .calculator img{
+    float: right;
+}
+
+main .builder {
+    border-top: 4px solid hsl(0, 78%, 62%);
+    background-color: white;
+    width: 400px;
+    padding: 30px;
+    grid-area: builder;
+    box-shadow: black 5px 5px 5px -5px;
+}
+
+main .builder img{
+    float: right;
+}
+
+
+main .karma {
+    border-top: 4px solid  hsl(34, 97%, 64%);
+    background-color: white;
+    width: 400px;
+    padding: 30px;
+    grid-area: karma;
+    margin-top: 20px;
+    box-shadow: black 5px 5px 5px -5px;
+}
+
+main .karma img{
+    float: right;
+}
+
+@media screen and (max-width:375px) {
+
+
+   .box {
+     display: flex;
+     flex-direction: column;
+     
+   }
+
+    .container {
+        width: 300px;
+        text-align: center;
+       
+    }
+
+    .container span {
+        font-size: 18px;
+    }
+
+    .container b {
+        font-size: 20px;
+    }
+
+    .container p {
+        font-size: 15px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        
+        
+      
+    }
+
+    main .supervisor{
+      
+        margin: 10px 0;
+        width: 300px;
+        font-size: 15px;
+        
+    }
+
+    main .supervisor img {
+        width: 40px;
+    }
+
+    main .calculator{
+        margin: 0;
+        width: 300px;
+        font-size: 15px;
+    }
+
+    main .calculator img{
+        width: 40px;
+    }
+    
+  
+    
+    main .builder {
+        margin-top: 10px;
+        width: 300px;
+        font-size: 15px;
+    
+       
+    }
+
+    main .builder img {
+        width: 40px;
+    }
+    
+
+    
+    
+    main .karma {
+      margin-top: 10px;
+      width: 300px;
+      font-size: 15px;
+    
+     
+    }
+
+    main .karma img{
+        width: 40px;
+    }
+    
+
+}
+
+
